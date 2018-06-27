@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#0085da"
+
+
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="384dp"
+        android:layout_height="54dp"
+        android:background="#045080"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textColor="?attr/colorBackgroundFloating"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="19dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <EditText
+        android:id="@+id/txtUserName"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#c8c8c8"
+        android:ems="10"
+        android:hint="UserName"
+        android:inputType="textPersonName"
+        android:textColor="#c8c8c8"
+        android:textColorHighlight="#c8c8c8"
+        android:textColorHint="#c8c8c8"
+        android:textColorLink="#c8c8c8"
+        android:textCursorDrawable="@drawable/color_cursor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.289" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#c8c8c8"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#c8c8c8"
+        android:textColorHighlight="#c8c8c8"
+        android:textColorHint="#c8c8c8"
+        android:textColorLink="#c8c8c8"
+        android:textCursorDrawable="@drawable/color_cursor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUserName"
+        app:layout_constraintVertical_bias="0.201" />
+
+    <TextView
+        android:id="@+id/txtForgotPassword"
+        android:layout_width="121dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:onClick="forgot"
+        android:text="Forgot Password?"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/txtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="148dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/roundedbutton"
+
+        android:onClick="signin"
+        android:text="Sign In"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="100dp"
+        android:layout_height="54dp"
+        android:background="#02568b"
+        android:onClick="signup"
+        android:text="Sign Up"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
